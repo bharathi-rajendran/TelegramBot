@@ -2,7 +2,7 @@
 """
 Created on Sun Feb 23 23:02:17 2020
 
-@author: Tanmay Thakur
+@author: Bharathi Rajendran
 """ 
 import logging
 
@@ -23,7 +23,7 @@ def some_func(bot, update):
         update.effective_message.reply_text(text = prediction(msg))
         
 def main():
-    updater = Updater('991501283:AAHKAhIb8LZceoP4GH5FPEhmbVY_MN3HQZA')
+    updater = Updater('1080386031:AAHOyT_1zFoik-vF-UuaJXoWK3o4xupaOh4')
     dp = updater.dispatcher
     dp.add_handler(MessageHandler(Filters.all, some_func))
     updater.start_polling()
